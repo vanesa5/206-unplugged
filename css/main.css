@@ -650,6 +650,10 @@ input[type=button] {
     width: 40%;
 }
 
+.map figure {
+  padding-bottom: 45.5%;
+}
+
 .contact-section .content-wrapper h2 {
     width: 80%;
 }
@@ -740,7 +744,11 @@ input[type=button] {
     .contact-section .content-wrapper h2 {
         width: 95%;
     }
-  
+
+    .map figure {
+      padding-bottom: 38.3%;
+    }
+    
     /* ==========================================================================
     FAQ Page
     ========================================================================== */
