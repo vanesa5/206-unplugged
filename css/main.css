@@ -141,11 +141,14 @@ p {
  
 img {
   width: 100%;
- 
 }
  
 figure {
  margin: 0;
+}
+
+header img {
+
 }
  
 address {
@@ -185,6 +188,15 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+ 
+header figure {
+  
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -252,13 +264,17 @@ footer .copyright {
 
 /*--Hero Area-- */
 .hero-area {
+background: url('../img/unplugged-retreat.jpg') ;
+background-size: cover;
+background-position: center;
+min-height: 500px;
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
 }
 
 .hero-area h1 {
- font-family: 'Poppins', sans-serif; 
+ font-family: 'Poppins',Helvetica, Arial,sans-serif; 
  font-weight: 400;
  font-size: 2.25em;
  line-height: 1em;
@@ -305,10 +321,11 @@ input[type=button] {
 /*--Features-- */
 
 .features {
-  
+  background: url('../img/unplugged-amenities.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  
   flex-flow: row wrap;
 }
 .features h2 {
@@ -351,6 +368,8 @@ input[type=button] {
   width: 55%;
   margin: 20px 0;
 }
+
+
 /*=======================================
                About Page
 ========================================*/
@@ -516,7 +535,11 @@ input[type=button] {
         width: 100%;
         justify-content: space-between;
     }
- 
+
+    header figure {
+      width: 35%;
+    }
+
     header nav {
         width: 20%;
     }
@@ -531,7 +554,11 @@ input[type=button] {
     }
  
     /* Hero Area */
- 
+    
+    .hero-area {
+      min-height: 600px;
+    }
+
     /* Aside */
     aside .content-wrapper {
         margin: 50px 0;
@@ -572,7 +599,7 @@ input[type=button] {
     .reviews article div {
         width: 40%;        
     }
- 
+
     /* Footer */
     footer .content-wrapper {
         width: 65%;
@@ -641,10 +668,28 @@ input[type=button] {
     .content-wrapper {
       max-width: 960px;
     }
+    
+    header figure {
+      width: 30%;
+    }
+    h2 {
+      font-size: 2.25em;
+    }
   
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+  
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
+    
     /* Hero */
     .hero-area h1 {
-      width: 60%;
+      font-size: 3.75em;
+     width: 80%;
   }
   
     /* Aside */
