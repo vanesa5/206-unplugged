@@ -122,6 +122,7 @@ h2 {
   font-weight: 400;
   font-size: 2.25em;
   line-height: 1.1em;
+  
 
 }
  
@@ -191,13 +192,14 @@ header .content-wrapper {
 }
  
 header figure {
-  
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+
 
 .header-divider {
   width:100% ;
@@ -345,6 +347,13 @@ input[type=button] {
 }
 
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
 
 .features p {
   text-align: center;
@@ -556,7 +565,7 @@ input[type=button] {
     }
 
     header nav {
-        width: 20%;
+        width: 30%;
     }
  
     header nav ul {
@@ -612,7 +621,7 @@ input[type=button] {
     }
     
     .reviews article div {
-        width: 40%;        
+        width: 42%;        
     }
 
     /* Footer */
@@ -748,7 +757,7 @@ input[type=button] {
     .map figure {
       padding-bottom: 38.3%;
     }
-    
+
     /* ==========================================================================
     FAQ Page
     ========================================================================== */
