@@ -245,16 +245,24 @@ footer .contact{
 }
 
 
-footer .social-icon {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .social-icons p{
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.125em;
 }
 
 footer .copyright {
@@ -362,7 +370,6 @@ input[type=button] {
 /*--Reviews-- */
 
 .reviews {
-  
   background-color: #2a423a ;
   display: flex;
   justify-content: center;
@@ -621,7 +628,7 @@ input[type=button] {
     }
     
     .reviews article div {
-        width: 42%;        
+        width: 40%;        
     }
 
     /* Footer */
@@ -653,10 +660,11 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 
 .mission-content p {
-    width: 40%;
+    width: 45%;
 }
 
 .map figure {
@@ -670,7 +678,11 @@ input[type=button] {
 .contact-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
 }
 /* ==========================================================================
    FAQ Page
@@ -692,7 +704,11 @@ input[type=button] {
     body {
       background-color: red;
     }
-  
+    
+    header {
+      padding: 15px 0;
+    }
+    
     .content-wrapper {
       max-width: 960px;
     }
