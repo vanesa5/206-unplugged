@@ -107,6 +107,8 @@ body {
 ul, 
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
  
 }
  
@@ -119,9 +121,10 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif; 
-  font-weight: 400;
-  font-size: 2.25em;
-  line-height: 1.1em;
+  font-weight: 500;
+  font-size: 1.875em;
+  line-height: 48px;
+  margin: 0;
   
 
 }
@@ -137,6 +140,7 @@ h4 {
  
 p {
   font-size: .875em;
+  line-height: 23px;
 	
 }
  
@@ -148,9 +152,6 @@ figure {
  margin: 0;
 }
 
-header img {
-
-}
  
 address {
   font-family: 'Open Sans', sans-serif;
@@ -161,7 +162,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  padding: 50px 0;
+  margin: 50px 0;
   color: #e2e3ed;
   }
 
@@ -169,17 +170,19 @@ address {
    /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
+  
+  background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #202322;
+    
 }
 
 header {
+  
   padding: 15px 0;
-
-}
+ }
 
 
 
@@ -197,13 +200,15 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background:transparent;
 }
 
 
 
 .header-divider {
+  background: #3a3a3a; 
   width:100% ;
-  margin: 10px 0 18px 0;
+  margin: 10px 0 20px 0;
   height: 1px;
 
 }
@@ -223,6 +228,10 @@ header nav ul{
   width: 100%;
   display:flex;
   justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -277,7 +286,7 @@ footer .copyright {
 background: url('../img/unplugged-retreat.jpg') ;
 background-size: cover;
 background-position: center;
-min-height: 500px;
+min-height: 600px;
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
@@ -285,9 +294,10 @@ flex-flow: row wrap;
 
 .hero-area h1 {
  font-family: 'Poppins',Helvetica, Arial,sans-serif; 
- font-weight: 400;
+ font-weight: 500;
  font-size: 2.25em;
  line-height: 1em;
+
 }
 
 /*--Aside-- */
@@ -380,9 +390,16 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
+.reviews figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 65%; 
+}
 .reviews h3 {
+  display: flex;
+  justify-content: left;
   width: 55%;
-  margin: 20px 0;
+  margin-top: 70px ;
 }
 
 
@@ -568,11 +585,11 @@ input[type=button] {
     }
 
     header figure {
-      width: 35%;
+      width: 30%;
     }
 
     header nav {
-        width: 30%;
+        width: 20%;
     }
  
     header nav ul {
@@ -583,11 +600,17 @@ input[type=button] {
     .header-divider {
         display: none;
     }
- 
+  
+    
     /* Hero Area */
     
     .hero-area {
       min-height: 600px;
+    }
+
+    .hero-area h1 {
+      font-size: 3em;
+      margin-top: 0;
     }
 
     /* Aside */
@@ -621,17 +644,31 @@ input[type=button] {
     }
  
     /* Reviews */
+    .reviews {
+      height: 510px;
+    }
     .reviews article {
       display: flex;
       justify-content: space-between;
+      
+      
  
     }
     
     .reviews article div {
-        width: 40%;        
+        width: 45%; 
+        display: flex;   
+        justify-content: center;
+        flex-flow: column;  
+        height: 170px;
     }
 
+    .reviews figure {
+      width: 50%;
+      
+    }
     /* Footer */
+
     footer .content-wrapper {
         width: 65%;
         margin: 100px 0;
@@ -660,10 +697,18 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    flex-flow: row wrap;
+    padding-top: 0;
+    max-height: 250px;
+    
+   }
+.mission-content h2 {
+  width: 100%;
+  line-height: 1.355;
+  
 }
-
 .mission-content p {
+   margin-top: 40px;
     width: 45%;
 }
 
@@ -675,10 +720,18 @@ input[type=button] {
     width: 80%;
 }
 
-.contact-content {
+.contact-section .content-wrapper p {
+  width: 45%;
+}
+
+.contact-section div {
+  width: 100%;
+}
+.contact-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .contact-content h4 {
@@ -708,7 +761,7 @@ input[type=button] {
     header {
       padding: 15px 0;
     }
-    
+
     .content-wrapper {
       max-width: 960px;
     }
@@ -757,8 +810,13 @@ input[type=button] {
     }
     
     /* Reviews */
+    .reviews {
+      height: 630px;
+    } 
+
     .reviews article div {
-      width: 42%;
+      width: 47%;
+      height: 255px;
     }
   
     /* ==========================================================================
