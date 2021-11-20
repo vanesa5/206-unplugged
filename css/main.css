@@ -138,7 +138,7 @@ h4 {
  
 p {
   font-size: .875em;
-  line-height: 1.285;
+  line-height: 23px;
 	
 }
  
@@ -253,7 +253,7 @@ footer .contact{
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -267,11 +267,7 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer .social-icons p a {
-  color: #e2e3ed;
-}
-
-footer .social-icons p a i {
+footer .social-icons p i {
   font-size: 1.3125em;
 }
 
