@@ -609,8 +609,45 @@ input[type=button] {
     .header-divider {
         display: none;
     }
+
+
+    footer .content-wrapper {
+      height: 100px;
+      margin: 100px 0;
+  }
   
+  .footer-content {
     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  footer .contact, footer .social {
+    margin-bottom: 0;
+    text-align: center;
+    width: 45%;
+  }
+
+  footer .contact {
+    margin-right: 120px;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+
+
     /* Hero Area */
     
     .hero-area {
@@ -688,24 +725,7 @@ input[type=button] {
       line-height: 18px;
     }
   
-    /* Footer */
 
-    footer .content-wrapper {
-        width: 65%;
-        margin: 100px 0;
-    }
-    
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
- 
-    }
- 
-    footer .contact {
-        margin-bottom: 0;
-    }
- 
 
     /* ==========================================================================
    About Page
@@ -760,10 +780,8 @@ input[type=button] {
   .contact-content h4 {
    font-size: 1.5em;
 }
-  footer .content-wrapper {
-    width: 50%;
-  }
-  .social-icons p {
+ 
+  
   
 /* ==========================================================================
    FAQ Page
@@ -810,6 +828,15 @@ input[type=button] {
         font-size: 1.125em;
         line-height: 1.333;
     }
+
+   footer .content-wrapper {
+     width: 100%;
+   }
+  
+   footer .social .social-icons {
+     width: 45%;
+     padding-left: 110px;
+   }
     
     /* Hero */
     .hero-area h1 {
@@ -820,11 +847,13 @@ input[type=button] {
     /* Aside */
     aside .content-wrapper {
       justify-content: space-around;
+
     }
   
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-      width: 50%;
+      width: 33%;
+      
     }
   
     /* Features */
@@ -838,13 +867,29 @@ input[type=button] {
     }
     
     /* Reviews */
-    .reviews {
+    .reviews .content-wrapper{
+      margin: 0;
       height: 630px;
     } 
 
+    .reviews figure,
     .reviews article div {
-      width: 47%;
-      height: 255px;
+      width: 48%;
+    }
+    
+    .reviews .content-wrapper article{
+      height: 300px;
+    }
+    .reviews h2, .reviews h3 {
+      line-height: auto;
+    }
+
+    .reviews h2 {
+      padding: 90px 0 90px 0;
+      margin: 0;
+    }
+    .reviews p {
+      line-height: 24px;
     }
   
     /* ==========================================================================
