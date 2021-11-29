@@ -810,9 +810,6 @@ input[type=button] {
     line-height: 48px;
 }
 
-.contact-section h4 {
-  line-height: ;
-}
   .contact-section {
    width: 100%;
    
@@ -875,7 +872,10 @@ input[type=button] {
     header {
       padding: 15px 0;
     }
-
+    
+    header nav {
+      width: 15%;
+    }
     .content-wrapper {
       max-width: 960px;
     }
@@ -883,44 +883,66 @@ input[type=button] {
     header figure {
       width: 30%;
     }
-    h2 {
-      font-size: 2.25em;
-    }
-  
-    h3,
-    h4 {
-        font-size: 1.875em;
-    }
-  
-    p {
-        font-size: 1.125em;
-        line-height: 1.333;
-    }
-
+    
+   
    footer .content-wrapper {
      width: 100%;
+     
    }
-  
+   
    footer .social .social-icons {
      width: 45%;
      padding-left: 110px;
    }
+   
+   footer h4{
+     font-size: 1.875em;
+   }
+
+   footer p {
+     font-size: 1.125em;
+   }
+
+   .copyright {
+    font-size: 1.125em;
+  }
     
     /* Hero */
     .hero-area h1 {
-      font-size: 3.75em;
-     width: 80%;
+    font-size: 3.75em;
+    line-height: 72px;
+    width: 80%;
   }
   
     /* Aside */
+
+   
     aside .content-wrapper {
       justify-content: space-around;
-
+      height: 160px;
+     
     }
-  
+    
+    aside h3 {
+      font-size: 1.875em;
+      line-height: 36px;
+      
+    }
+
+    aside .form-description h3 {
+      margin-bottom: 0;
+    }
+
+    aside p {
+      font-size: 1.125em;
+      line-height: 24px;
+      margin: 15px 0;
+      
+    }
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
       width: 33%;
+      
       
     }
   
@@ -931,7 +953,7 @@ input[type=button] {
     }
   
     .features article {
-      flex-basis: 33%;
+      flex-basis: 25.5%;
     }
     
     /* Reviews */
@@ -959,27 +981,57 @@ input[type=button] {
     .reviews p {
       line-height: 24px;
     }
+
+    
   
     /* ==========================================================================
     About Page
     ========================================================================== */
-  
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-        width: 95%;
+    .mission .mission-content h2 {
+      font-size: 3em;
+      line-height: 57px;
     }
+
+    .mission .mission-content p {
+      width: 45%;
+      font-size: 1.125em;
+      line-height: 24px;
+    }
+    
 
     .map figure {
       padding-bottom: 38.3%;
     }
+    
+    .contact-section .content-wrapper h2 {
+      width: 100%;
+      font-size: 3em;
+    }
+    
+    .contact-section .contact-content h4 {
+      font-size: 1.875em;
 
+    }
+    .contact-section .contact-content p {
+      font-size: 1.125em;
+      line-height: 22px;
+    }
     /* ==========================================================================
     FAQ Page
     ========================================================================== */
     .faq h2 {
+      font-size:3em ;
       width: 100%;
     }
-  
+
+    .faq h4, .faq p {
+      font-size: 1.125em;
+    }
+    
+    
+    
+   
+    
   }
   
   /* ==========================================================================
